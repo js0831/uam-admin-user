@@ -83,6 +83,11 @@ const routes = [
         path: 'channels',
         loadChildren: () => __webpack_require__.e(/*! import() | modules-channel-channel-module */ "modules-channel-channel-module").then(__webpack_require__.bind(null, /*! ./modules/channel/channel.module */ "./src/app/modules/channel/channel.module.ts")).then(m => m.ChannelModule),
         canActivate: [_guard_route_guard_guard__WEBPACK_IMPORTED_MODULE_2__["RouteGuardGuard"]]
+    },
+    {
+        path: 'teams',
+        loadChildren: () => __webpack_require__.e(/*! import() | modules-team-team-module */ "modules-team-team-module").then(__webpack_require__.bind(null, /*! ./modules/team/team.module */ "./src/app/modules/team/team.module.ts")).then(m => m.TeamModule),
+        canActivate: [_guard_route_guard_guard__WEBPACK_IMPORTED_MODULE_2__["RouteGuardGuard"]]
     }
 ];
 class AppRoutingModule {
@@ -377,12 +382,17 @@ function SettingsComponent_ul_0_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](15, "Channels");
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](16, "li", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "a", 11);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](18, "Teams");
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementContainerEnd"]();
 } }
 function SettingsComponent_ul_0_Template(rf, ctx) { if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "ul", 1);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](1, SettingsComponent_ul_0_li_1_Template, 3, 0, "li", 2);
-    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, SettingsComponent_ul_0_ng_container_2_Template, 16, 0, "ng-container", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](2, SettingsComponent_ul_0_ng_container_2_Template, 19, 0, "ng-container", 3);
     _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
 } if (rf & 2) {
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
@@ -417,7 +427,7 @@ class SettingsComponent {
     }
 }
 SettingsComponent.ɵfac = function SettingsComponent_Factory(t) { return new (t || SettingsComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_1__["Location"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_service_local_data_service__WEBPACK_IMPORTED_MODULE_3__["LocalDataService"])); };
-SettingsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SettingsComponent, selectors: [["app-settings"]], decls: 1, vars: 1, consts: [["class", "nav justify-content-end", 4, "ngIf"], [1, "nav", "justify-content-end"], ["class", "nav-item", 4, "ngIf"], [4, "ngIf"], [1, "nav-item"], ["routerLink", "/", 1, "nav-link"], ["routerLink", "/organization", 1, "nav-link"], ["routerLink", "/applications", 1, "nav-link"], ["routerLink", "/businessroles", 1, "nav-link"], ["routerLink", "/jobduties", 1, "nav-link"], ["routerLink", "/channels", 1, "nav-link"]], template: function SettingsComponent_Template(rf, ctx) { if (rf & 1) {
+SettingsComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: SettingsComponent, selectors: [["app-settings"]], decls: 1, vars: 1, consts: [["class", "nav justify-content-end", 4, "ngIf"], [1, "nav", "justify-content-end"], ["class", "nav-item", 4, "ngIf"], [4, "ngIf"], [1, "nav-item"], ["routerLink", "/", 1, "nav-link"], ["routerLink", "/organization", 1, "nav-link"], ["routerLink", "/applications", 1, "nav-link"], ["routerLink", "/businessroles", 1, "nav-link"], ["routerLink", "/jobduties", 1, "nav-link"], ["routerLink", "/channels", 1, "nav-link"], ["routerLink", "/teams", 1, "nav-link"]], template: function SettingsComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, SettingsComponent_ul_0_Template, 3, 2, "ul", 0);
     } if (rf & 2) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", !ctx.isLoginPage);
@@ -1236,7 +1246,7 @@ __webpack_require__.r(__webpack_exports__);
 const environment = {
     production: false,
     // apiURL: 'http://localhost:4003/api/',
-    apiURL: 'https://moody-newt-51.loca.lt/api/',
+    apiURL: 'https://stale-goose-99.loca.lt/api/',
     staticData: false
 };
 /*
