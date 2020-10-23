@@ -1245,9 +1245,9 @@ __webpack_require__.r(__webpack_exports__);
 // The list of file replacements can be found in `angular.json`.
 const environment = {
     production: false,
-    // apiURL: 'http://localhost:4003/api/',
-    apiURL: 'https://tricky-cow-4.loca.lt/api/',
-    staticData: false
+    apiURL: 'http://localhost:4003/api/',
+    // apiURL: 'https://stale-goose-99.loca.lt/api/',
+    staticData: true
 };
 /*
  * For easier debugging in development mode, you can import the following file
