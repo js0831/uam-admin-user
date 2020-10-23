@@ -1029,6 +1029,7 @@ class StaffInformationComponent {
             from_date: formData.fromDate,
         };
         if (src_environments_environment__WEBPACK_IMPORTED_MODULE_2__["environment"].staticData) {
+            alert('Success');
             localStorage.removeItem('staffProvisioning');
             this.service.resetSTep();
             this.router.navigate(['provisioning', 'organization']);
