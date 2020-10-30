@@ -44,7 +44,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const routes = [
-    { path: '', redirectTo: 'provisioning', pathMatch: 'full' },
+    { path: '', redirectTo: 'staffs', pathMatch: 'full' },
     // {
     //   path: 'login',
     //   loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
@@ -87,6 +87,11 @@ const routes = [
     {
         path: 'teams',
         loadChildren: () => __webpack_require__.e(/*! import() | modules-team-team-module */ "modules-team-team-module").then(__webpack_require__.bind(null, /*! ./modules/team/team.module */ "./src/app/modules/team/team.module.ts")).then(m => m.TeamModule),
+        canActivate: [_guard_route_guard_guard__WEBPACK_IMPORTED_MODULE_2__["RouteGuardGuard"]]
+    },
+    {
+        path: 'staffs',
+        loadChildren: () => __webpack_require__.e(/*! import() | modules-staff-staff-module */ "default~modules-organization-organization-module~modules-staff-staff-module").then(__webpack_require__.bind(null, /*! ./modules/staff/staff.module */ "./src/app/modules/staff/staff.module.ts")).then(m => m.StaffModule),
         canActivate: [_guard_route_guard_guard__WEBPACK_IMPORTED_MODULE_2__["RouteGuardGuard"]]
     }
 ];
